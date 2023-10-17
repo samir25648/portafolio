@@ -79,13 +79,13 @@ export default function Contact() {
       className="flex text-center flex-col gap-12 mt-10 min-h-screen overflow-hidden"
     >
       <div className="text-5xl font-bold" data-aos={"fade"}>
-        Contact
+        Contáctame
       </div>
       <div className="flex flex-row  ">
         <div className="flex-auto  w-32 pl-10 overflow-visible">
           <form onSubmit={handleSubmit} data-aos={"slide-up"}>
             <label class="block mb-2 text-2xl font-semibold mt-3  text-white ">
-              Get in Touch
+              Envíame un Correo
             </label>
             <hr className="border-cyan-700 border-2 w-1/3 mx-auto bg-cyan-700" />
             <div class="flex pt-9">
@@ -99,7 +99,7 @@ export default function Contact() {
                 required
                 type="text"
                 class="rounded-none rounded-r-lg  border block flex-1 min-w-0 w-full text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Name"
+                placeholder="Nombre"
               />
             </div>
             <div class="flex pt-9">
@@ -124,7 +124,7 @@ export default function Contact() {
               rows="4"
               required
               minLength={10}
-              placeholder="Write your message here..."
+              placeholder="Escriba su mensaje aquí..."
               class="block h-40 text-white mt-10 p-2.5 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 focus:ring-blue-500 focus:border-blue-500 resize-none"
             ></textarea>
             <button
@@ -135,7 +135,7 @@ export default function Contact() {
               bg-blue-500 hover:bg-blue-700 focus:ring-blue-800
               `}
             >
-              <EmailIcon /> Send Message
+              <EmailIcon /> Enviar Mensaje
             </button>
             <button
               disabled
@@ -161,7 +161,7 @@ export default function Contact() {
                   fill="currentColor"
                 />
               </svg>
-              Sending...
+              Enviando...
             </button>
             {/* <button
               type="button"
@@ -179,7 +179,7 @@ export default function Contact() {
                 mailSent === true && loading === false ? "visible" : "hidden"
               } cursor-default  mt-7 py-2 px-4 rounded-md `}
             >
-              <FileDownloadDoneIcon /> Message Sent
+              <FileDownloadDoneIcon /> Mensaje Enviado
             </button>
           </form>
         </div>
@@ -194,11 +194,11 @@ export default function Contact() {
             />
           </div>
           <div data-aos={"slide-up"} className="text-center">
-            <div className="text-center mt-2 text-3xl font-bold">Follow Me</div>
+            <div className="text-center mt-2 text-3xl font-bold">Sígueme en mis Redes</div>
             <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-4">
               <div
                 onClick={() =>
-                  window.open("https://github.com/daniel-jebarson", "_blank")
+                  window.open("https://github.com/samir25648", "_blank")
                 }
               >
                 <GitHubIcon className="cursor-pointer hover:scale-105" />
@@ -206,7 +206,7 @@ export default function Contact() {
               <div
                 onClick={() =>
                   window.open(
-                    "https://www.instagram.com/daniel_diago2003",
+                    "https://www.instagram.com/samir_alanya/",
                     "_blank"
                   )
                 }
@@ -217,7 +217,7 @@ export default function Contact() {
               <div
                 onClick={() =>
                   window.open(
-                    "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
+                    "https://www.linkedin.com/in/samir-brian-alanya-escobar/",
                     "_blank"
                   )
                 }
@@ -225,21 +225,12 @@ export default function Contact() {
                 {" "}
                 <LinkedInIcon className="cursor-pointer hover:scale-105" />
               </div>
-              <div
-                onClick={() =>
-                  window.open(
-                    "https://www.facebook.com/daniel.jebarson.9",
-                    "_blank"
-                  )
-                }
-              >
-                <FacebookIcon className="cursor-pointer hover:scale-105" />
-              </div>{" "}
+              
             </div>
             <div className="mt-6 italic text-sm font-medium text-blue-500 ">
               <span className=" pl-1 ">Copyright</span>
               <CopyrightIcon className="cursor-pointer mx-1" />
-              <span>2023 Daniel Jebarson K</span>
+              <span>2023 Samir Alanya</span>
             </div>
           </div>
         </div>

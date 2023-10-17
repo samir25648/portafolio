@@ -68,7 +68,7 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="1800"
         >
-          <a href="#contact">Contactame</a>
+          <a href="#contact">Contáctame</a>
         </p>
       </div>
       <div
@@ -83,6 +83,20 @@ export default function Slidebar() {
         >
           <GitHubIcon className="cursor-pointer hover:scale-105" />
         </div>
+
+        <div
+                onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/samir_alanya/",
+                    "_blank"
+                  )
+                }
+              >
+                {" "}
+                <InstagramIcon className="cursor-pointer hover:scale-105" />
+              </div>
+
+
         <div
           onClick={() =>
             window.open(
@@ -95,6 +109,8 @@ export default function Slidebar() {
           <LinkedInIcon className="cursor-pointer hover:scale-105" />
         </div>
 
+
+          
       </div>
     </div>
   );
